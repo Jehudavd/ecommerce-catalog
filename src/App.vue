@@ -1,9 +1,16 @@
-<script setup>
-import CatalogStore from "./components/CatalogStore.vue";
-</script>
-
 <template>
-  <CatalogStore />
+  <EcommerceProduct />
 </template>
 
-<style scoped></style>
+<script>
+import EcommerceProduct from "./components/EcommerceProduct.vue";
+
+export default {
+  name: "App",
+  components: {
+    EcommerceProduct,
+  },
+};
+</script>
+
+<style></style>

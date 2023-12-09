@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.container {
+  }
+  
+  .skeleton-container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -14,210 +14,219 @@
     align-items: center;
     justify-content: center;
     z-index: 999;
-}
-
-.skeleton-card {
-    width: 1550px;
+  }
+  
+  .skeleton-show {
+    max-width: 1200px;
     margin: 0 auto;
     background-color: white;
-    box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
-    height: 70%;
+  }
+  
+  /* Available */
+  .skeleton-available {
+    margin-top: 40px;
     display: flex;
-}
-
-.left-col {
-    box-sizing: border-box;
-    height: 100%;
-}
-
-.right-col {
-    box-sizing: border-box;
-    width: 1050px;
-    height: 100%;
-}
-
-.img-skeleton {
-    box-sizing: border-box;
-    width: 450px;
-    height: 88%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    background-color: #dcdcdc;
-    animation: pulse 2s infinite ease-in-out;
-    position: relative;
-}
-
-.top {
-    box-sizing: border-box;
-    width: 98%;
-    background-color: #dcdcdc;
-    height: 100px;
-    margin-top: 2rem;
-    margin-right: 5rem;
-    margin-bottom: 0, 5rem;
-    animation: pulse 2s infinite ease-in-out;
-    position: relative;
-}
-
-.middle {
-    box-sizing: border-box;
-    width: 98%;
-    background-color: #dcdcdc;
-    height: 350px;
-    margin-top: 1rem;
-    margin-right: 5rem;
-    margin-bottom: 0, 5rem;
-    animation: pulse 2s infinite ease-in-out;
-    position: relative;
-}
-
-.bottom {
-    box-sizing: border-box;
-    width: 98%;
-    display: inline-block;
-    height: 100px;
-    margin-top: 1rem;
-    margin-right: 5rem;
-    margin-bottom: 0, 5rem;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
     align-items: center;
-}
-
-.btn-skeleton {
-    padding-inline: 2rem;
+    position: relative;
+  }
+  
+  /* Left section */
+  .skeleton-product-left-image {
+    margin: 0 20px;
+  }
+  
+  .skeleton-img {
+    width: 300px;
+    height: 383px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  /* Right section */
+  .skeleton-product-right-details {
+    margin: 0 20px;
+    height: 80vh;
+  }
+  
+  .skeleton-product-title {
+    width: 700px;
+    height: 25px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  .skeleton-product-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  
+  .skeleton-product-category {
+    height: 16px;
+    width: 150px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  .skeleton-product-rate {
+    height: 16px;
+    width: 200px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  hr {
+    margin: 10px 0;
+    width: 820px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  .skeleton-product-desc {
+    margin-top: 10px;
+  }
+  
+  .skeleton-product-desc span:nth-child(1) {
+    display: block;
+    width: 780px;
+    height: 20px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  .skeleton-product-desc span:nth-child(2) {
+    display: block;
+    width: 820px;
+    height: 20px;
+    animation: pulse 2s infinite ease-in-out;
+    margin-top: 5px;
+  }
+  
+  .skeleton-product-desc span:nth-child(3) {
+    display: block;
+    width: 650px;
+    height: 20px;
+    animation: pulse 2s infinite ease-in-out;
+    margin-top: 5px;
+  }
+  
+  .skeleton-product-desc span:nth-child(4) {
+    display: block;
+    width: 450px;
+    height: 20px;
+    animation: pulse 2s infinite ease-in-out;
+    margin-top: 5px;
+  }
+  
+  .skeleton-bottom {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .skeleton-product-price {
+    width: 80px;
+    height: 26px;
+    animation: pulse 2s infinite ease-in-out;
+  }
+  
+  .skeleton-btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .skeleton-btn {
     width: 350px;
     height: 40px;
-    margin-right: 0.5rem;
-    background-color: #dcdcdc;
-    border: 0px;
     animation: pulse 2s infinite ease-in-out;
-    position: relative;
-}
-
-.price {
-    height: 40px;
-    background-color: #dcdcdc;
-    width: 150px;
-    margin-bottom: 0.7rem;
-    animation: pulse 2s infinite ease-in-out;
-    position: relative;
-}
-
-
-.loader {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #262627;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    /* Safari */
-    animation: spin 2s linear infinite;
-    top: 40%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.loader-middle {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #262627;
-    width: 120px;
-    height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    /* Safari */
-    animation: spin 2s linear infinite;
-    top: 35%;
-    left: 42%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.loader-top {
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #262627;
-    width: 70px;
-    height: 70px;
-    -webkit-animation: spin 2s linear infinite;
-    /* Safari */
-    animation: spin 2s linear infinite;
-    top: 15%;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.loader-price {
-    border: 10px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 10px solid #262627;
-    width: 40px;
-    height: 40px;
-    left: 38%;
-    -webkit-animation: spin 2s linear infinite;
-    /* Safari */
-    animation: spin 2s linear infinite;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.loader-btn1 {
-    border: 10px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 10px solid #262627;
-    width: 38px;
-    height: 38px;
-    left: 43%;
-    top: 1%;
-    -webkit-animation: spin 2s linear infinite;
-    /* Safari */
-    animation: spin 2s linear infinite;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.loader-btn2 {
-    border: 10px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 10px solid #262627;
-    width: 38px;
-    height: 38px;
-    left: 43%;
-    top: 1%;
-    -webkit-animation: spin 2s linear infinite;
-    /* Safari */
-    animation: spin 2s linear infinite;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-@-webkit-keyframes spin {
+    border: none;
+    margin: 10px 20px 10px 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  @media (max-width: 680px) {
+    .skeleton-container {
+      width: 620px;
+      height: 510px;
+    }
+  
+    .skeleton-show {
+      max-width: 620px;
+      margin: 20px;
+    }
+  
+    /* Available */
+    .skeleton-available {
+      margin-top: 20px;
+      width: 620px;
+      height: 525px;
+      display: block;
+      overflow: hidden;
+    }
+  
+    /* Left section */
+    .skeleton-product-left-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .skeleton-img {
+      width: 200px;
+      height: 283px;
+      margin-bottom: 20px;
+    }
+  
+    .skeleton-product-title {
+      width: 100%;
+      height: 25px;
+    }
+  
+    hr {
+      width: 100%;
+    }
+  
+    .skeleton-product-desc span:nth-child(1) {
+      width: 280px;
+      height: 20px;
+    }
+  
+    .skeleton-product-desc span:nth-child(2) {
+      width: 220px;
+      height: 20px;
+    }
+  
+    .skeleton-product-desc span:nth-child(3) {
+      width: 150px;
+      height: 20px;
+    }
+  
+    .skeleton-product-desc span:nth-child(4) {
+      width: 50px;
+      height: 20px;
+    }
+  
+    .skeleton-bottom {
+      position: relative;
+    }
+  
+    .skeleton-btn-container {
+      display: block;
+      margin-bottom: 20px;
+    }
+  
+    .skeleton-btn {
+      width: 150px;
+      height: 30px;
+    }
+  }
+  
+  @keyframes pulse {
     0% {
-        -webkit-transform: rotate(0deg);
+      background-color: #94a3b8;
     }
-
+  
+    50% {
+      background-color: #cbd5e1;
+    }
+  
     100% {
-        -webkit-transform: rotate(360deg);
+      background-color: #94a3b8;
     }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
+  }
